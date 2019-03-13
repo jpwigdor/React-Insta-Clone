@@ -1,0 +1,16 @@
+.container-search-bar {
+  border: red 1px solid;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sbar-left {
+  justify-content: flex-start;
+}
+
+.sbar-right {
+  display: flex;
+  justify-content: flex-end;
+}
