@@ -1,12 +1,16 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
+
+import dummyData from './dummy-data';
+
 import './App.css';
 
-class App extends Component {
+
+class App extends React.Component {
   render() {
     return (
       <div className="App">
         Hello Instagram!
+
       </div>
     );
   }
