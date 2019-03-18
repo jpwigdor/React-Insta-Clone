@@ -1,12 +1,26 @@
-import React from 'react';
-import CommentsSection from '../CommentsSection/CommentsSection';
+import React from "react";
+import Post from "./Post";
 
-const PostsContainer = (props) => {
-  return (  
-    <div className="container-posts">
-      {/* <CommentsSection /> */}
-    </div>
-  );
+import "./PostsContainer";
+
+class PostsContainer extends React.Component {
+  render() {
+    return (
+      <div className="container-posts">
+        <div className="container-post">
+          {this.props.dummyData.map(post => {
+            return (
+              <Post
+                key={post.username}
+                post={post}
+                dummyData={this.props.dummyData}
+              />
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
 }
- 
+
 export default PostsContainer;

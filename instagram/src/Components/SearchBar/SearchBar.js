@@ -1,26 +1,25 @@
-import React from 'react';
+import React from "react";
 
-import like_icon from "../../assets/like_icon";
+// import logoWord from "../../assets/logo_word";
+// import like_icon from "../../assets/like_icon";
 
-import './SearchBar.css';
+import "./SearchBar.css";
 
 const SearchBar = () => {
-  return ( 
+  return (
     <div className="container-search-bar">
       <div className="sbar-left">
-        <div className="logo"></div>
-        <div className="logo-word"></div>
+        <div className="logo">{/* <img alt="IGlogo" src={logoWord} /> */}</div>
+        <div className="logo-word" />
       </div>
-      <input 
-        type="text"
-        placeholder="Search"/>
+      <input type="text" placeholder="Search" />
       <div className="sbar-right">
-        <img src={like_icon} alt="like Icon" />
+        {/* <img src={like_icon} alt="like Icon" /> */}
         <div>{/*like icon*/}</div>
         <div>{/*profile icon*/}</div>
       </div>
     </div>
   );
-}
- 
+};
+
 export default SearchBar;
