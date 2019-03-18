@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
+
 import CommentSection from "../CommentsSection/CommentsSection";
 
 import "./Post";
@@ -22,5 +24,11 @@ class Post extends Component {
     );
   }
 }
+
+Post.propTypes = {
+  thumbnailUrl: PropTypes.string,
+  username: PropTypes.string,
+  imageUrl: PropTypes.string
+};
 
 export default Post;

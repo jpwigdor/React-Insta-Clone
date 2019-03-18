@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
+
 import Comment from "./Comment";
 
 class CommentsSection extends Component {
@@ -28,5 +30,10 @@ class CommentsSection extends Component {
     );
   }
 }
+
+CommentsSection.propTypes = {
+  timestamp: PropTypes.string,
+  likes: PropTypes.number
+};
 
 export default CommentsSection;
