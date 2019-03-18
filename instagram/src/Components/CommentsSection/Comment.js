@@ -7,8 +7,8 @@ class Comment extends Component {
   render() {
     return (
       <div classname="container-comment">
-        <div>{this.props.comment.username}</div>
-        <div>{this.props.comment.text}</div>
+        <span className="username">{this.props.comment.username + " "}</span>
+        <span>{this.props.comment.text}</span>
       </div>
     );
   }

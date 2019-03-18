@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 import Comment from "./Comment";
+import "./CommentsSection.css";
 
 class CommentsSection extends Component {
   render() {

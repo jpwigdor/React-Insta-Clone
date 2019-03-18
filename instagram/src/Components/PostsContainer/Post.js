@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import CommentSection from "../CommentsSection/CommentsSection";
 
-import "./Post";
+import "./Post.css";
 
 class Post extends Component {
   render() {

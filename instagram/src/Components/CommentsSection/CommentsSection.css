@@ -1,0 +1,17 @@
+.container-comments-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  width: 100%;
+}
+
+.like-count {
+  font-weight: bold;
+  padding: 10px;
+}
+
+.container-comments-section form {
+  width: 100%;
+}

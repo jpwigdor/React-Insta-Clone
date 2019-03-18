@@ -1,7 +1,7 @@
 import React from "react";
 import Post from "./Post";
 
-import "./PostsContainer";
+import "./PostsContainer.css";
 
 class PostsContainer extends React.Component {
   render() {
