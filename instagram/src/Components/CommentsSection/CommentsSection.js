@@ -14,7 +14,12 @@ class CommentsSection extends Component {
   }
 
   addComment = e => {
-    this.setState({ comment: e.target.value });
+    this.setState(
+      {
+        comment: e.target.value
+      },
+      () => console.log()
+    );
   };
 
   submitComment = e => {
@@ -49,7 +54,7 @@ class CommentsSection extends Component {
             type="text"
             placeholder="Add a Comment..."
             onChange={this.addComment}
-            value={this.comment}
+            value={this.state.comment}
           />
         </form>
       </div>
