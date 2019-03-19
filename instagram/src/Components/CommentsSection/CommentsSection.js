@@ -39,7 +39,7 @@ class CommentsSection extends Component {
           {/* Images here */}
         </div>
         <div className="like-count">{this.props.post.likes} Likes</div>
-        {this.props.comments.map(comment => {
+        {this.state.comments.map(comment => {
           return (
             <Comment
               key={comment.text}
