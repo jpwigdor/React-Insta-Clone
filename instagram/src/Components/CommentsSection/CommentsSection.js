@@ -30,6 +30,8 @@ class CommentsSection extends Component {
     this.setState({ comments, comment: "" });
   };
 
+  // TODO: increment Like Counter
+
   render() {
     return (
       <div className="container-comments-section">

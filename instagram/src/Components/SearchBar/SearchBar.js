@@ -5,6 +5,9 @@ import React from "react";
 
 import "./SearchBar.css";
 
+// TODO: Search - SearchBar.js
+//   Set up the search bar will like the comment input and the like button. In your function, filter out any post whose username doesn't match the search term passed in, then update the state with the resulting data.
+
 const SearchBar = () => {
   return (
     <div className="container-search-bar">

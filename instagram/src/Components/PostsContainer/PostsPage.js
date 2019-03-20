@@ -1,9 +1,10 @@
 import React from "react";
 
-import dummyData from "./dummy-data";
-import PostsPage from "./Components/PostsContainer/PostsPage";
+import dummyData from "../../dummy-data";
 
-import "./App.css";
+import "../../App.css";
+import SearchBar from "../SearchBar/SearchBar";
+import PostsContainer from "./PostsContainer";
 
 // Day 2
 // TODO: Liking posts - CommentsSection.js
@@ -12,7 +13,7 @@ import "./App.css";
 // TODO: Search - SearchBar.js
 //   Set up the search bar will like the comment input and the like button. In your function, filter out any post whose username doesn't match the search term passed in, then update the state with the resulting data.
 
-class App extends React.Component {
+class PostsPage extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -27,10 +28,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <PostsPage />
+        <SearchBar />
+        <PostsContainer dummyData={this.state.dummyData} />
       </div>
     );
   }
 }
 
-export default App;
+export default PostsPage;
