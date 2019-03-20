@@ -1,7 +1,10 @@
 import React from "react";
 
-// import logoWord from "../../assets/logo_word";
-// import like_icon from "../../assets/like_icon";
+import logoWord from "../../assets/logo_word.png";
+import camera from "../../assets/logo_camera.jpg";
+import like_icon from "../../assets/like_icon.png";
+import compass from "../../assets/compass.png";
+import profile from "../../assets/profile_icon.png";
 
 import "./SearchBar.css";
 
@@ -12,14 +15,16 @@ const SearchBar = () => {
   return (
     <div className="container-search-bar">
       <div className="sbar-left">
-        <div className="logo">{/* <img alt="IGlogo" src={logoWord} /> */}</div>
-        <div className="logo-word" />
+        <div className="logo">
+          <img alt="camera" src={camera} />
+          <img alt="IGlogo" src={logoWord} />
+        </div>
       </div>
       <input type="text" placeholder="Search" />
       <div className="sbar-right">
-        {/* <img src={like_icon} alt="like Icon" /> */}
-        <div>{/*like icon*/}</div>
-        <div>{/*profile icon*/}</div>
+        <img src={compass} alt="compass" />
+        <img src={like_icon} alt="like icon" />
+        <img src={profile} alt="profile icon" />
       </div>
     </div>
   );

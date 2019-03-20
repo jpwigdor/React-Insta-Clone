@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import "./Comment";
+import "./Comment.css";
 
 class Comment extends Component {
   render() {

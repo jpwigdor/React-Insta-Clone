@@ -2,7 +2,7 @@
   border: red 1px solid;
   width: 800px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   margin-bottom: 10px;
@@ -15,4 +15,16 @@
 .sbar-right {
   display: flex;
   justify-content: flex-end;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.sbar-right img {
+  height: 40px;
+}
+
+input {
+  text-align: center;
 }

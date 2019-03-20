@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 import Comment from "./Comment";
+
+import heart from "../../assets/like_icon.png";
 import "./CommentsSection.css";
 
 class CommentsSection extends Component {
@@ -36,7 +38,7 @@ class CommentsSection extends Component {
     return (
       <div className="container-comments-section">
         <div className="container-comments-icons">
-          {/* Images here */}
+          <img src={heart} alt="like" />
           {/* Images here */}
           {/* Images here */}
         </div>
