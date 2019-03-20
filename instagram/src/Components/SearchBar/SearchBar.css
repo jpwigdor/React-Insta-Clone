@@ -8,6 +8,21 @@
   margin-bottom: 10px;
 }
 
+.iword {
+  margin-top: 5px;
+  border-left: 1px solid rgb(119, 119, 119);
+}
+
+.sbar-wrapper {
+  border: 1px solid darkgrey;
+  background-color: #f5f8fa;
+}
+
+.sbar {
+  border: none;
+  background-color: #f5f8fa;
+}
+
 .sbar-left {
   justify-content: flex-start;
 }
@@ -19,6 +34,7 @@
 
 .logo img {
   height: 40px;
+  padding: 0px 5px;
 }
 
 .sbar-right img {

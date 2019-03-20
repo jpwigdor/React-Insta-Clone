@@ -16,11 +16,14 @@ const SearchBar = () => {
     <div className="container-search-bar">
       <div className="sbar-left">
         <div className="logo">
-          <img alt="camera" src={camera} />
-          <img alt="IGlogo" src={logoWord} />
+          <img className="camera" alt="camera" src={camera} />
+          <img className="iword" alt="IGlogo" src={logoWord} />
         </div>
       </div>
-      <input type="text" placeholder="Search" />
+      <div className="sbar-wrapper">
+        <i className="fas fa-search" />
+        <input type="text" placeholder="Search" className="sbar" />
+      </div>
       <div className="sbar-right">
         <img src={compass} alt="compass" />
         <img src={like_icon} alt="like icon" />
