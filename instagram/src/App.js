@@ -2,6 +2,8 @@ import React from "react";
 
 import dummyData from "./dummy-data";
 import PostsPage from "./Components/PostsContainer/PostsPage";
+import withAuthenticate from "./Components/Authentication/withAuthenticate";
+import LoginPage from "./Components/Login/Login";
 
 import "./App.css";
 
@@ -27,10 +29,12 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <PostsPage />
+        <ComponentWithAuthenticate />
       </div>
     );
   }
 }
+
+const ComponentWithAuthenticate = withAuthenticate(PostsPage)(LoginPage);
 
 export default App;

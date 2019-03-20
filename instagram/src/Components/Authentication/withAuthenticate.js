@@ -1,19 +1,19 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-const withAuthenticate = PostsPage => LoginPage => 
+const withAuthenticate = PostsPage => LoginPage =>
   class extends Component {
     constructor(props) {
       super(props);
       this.state = {
-        loggedIn = false
-      }
+        loggedIn: false
+      };
     }
 
     componentDidMount() {
-      if (!localStorage.getItem('user')) {
-        this.setState({ loggedIn: false});
+      if (!localStorage.getItem("user")) {
+        this.setState({ loggedIn: false });
       } else {
-        this.setState({ loggedIn: true})
+        this.setState({ loggedIn: true });
       }
     }
 
@@ -23,4 +23,4 @@ const withAuthenticate = PostsPage => LoginPage =>
     }
   };
 
-  export default withAuthenticate;
+export default withAuthenticate;
