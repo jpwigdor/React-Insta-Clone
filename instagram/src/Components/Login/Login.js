@@ -15,9 +15,15 @@ class Login extends Component {
     this.setState({ [e.target.name]: e.target.value });
   };
 
+  handleLoginSubmit = e => {
+    const user = this.state.username;
+    localStorage.setItem("user", user);
+    window.location.reload();
+  };
+
   render() {
     return (
-      <div className="login-form">
+      <form className="login-form">
         <h2> Instagram </h2>
         <input
           type="text"
@@ -33,8 +39,8 @@ class Login extends Component {
           value={this.state.password}
           onChange={this.handleInputChange}
         />
-        <button>Log In</button>
-      </div>
+        <button onClick={this.handleLoginSubmit}>Log In</button>
+      </form>
     );
   }
 }
