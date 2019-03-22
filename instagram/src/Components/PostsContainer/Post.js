@@ -13,7 +13,11 @@ class Post extends Component {
           <img src={this.props.post.thumbnailUrl} alt="" />
           <div className="username">{this.props.post.username}</div>
         </div>
-        <img src={this.props.post.imageUrl} alt="postImg" />
+        <img
+          className="post-img"
+          src={this.props.post.imageUrl}
+          alt="post-img"
+        />
         <div />
         <CommentSection
           comments={this.props.post.comments}
