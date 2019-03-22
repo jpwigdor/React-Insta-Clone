@@ -1,4 +1,4 @@
-.container-search-bar {
+/* .container-search-bar {
   width: 800px;
   display: flex;
   justify-content: space-between;
@@ -15,14 +15,14 @@
 .sbar-wrapper {
   border: 1px solid darkgrey;
   background-color: #f5f8fa;
-}
+} */
 
 .sbar {
   border: none;
   background-color: #f5f8fa;
 }
 
-.sbar-left {
+/* .sbar-left {
   justify-content: flex-start;
 }
 
@@ -42,4 +42,4 @@
 
 input {
   text-align: center;
-}
+} */
