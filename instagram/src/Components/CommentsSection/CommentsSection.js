@@ -56,7 +56,7 @@ class CommentsSection extends Component {
           {/* Images here */}
           {/* Images here */}
         </div>
-        <div className="like-count">{this.props.post.likes} Likes</div>
+        <div className="like-count">{this.state.likes} Likes</div>
         {this.state.comments.map(comment => {
           return (
             <Comment
