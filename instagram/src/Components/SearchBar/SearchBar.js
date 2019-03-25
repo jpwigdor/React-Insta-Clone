@@ -7,7 +7,7 @@ import like_icon from "../../assets/like_icon.png";
 import compass from "../../assets/compass.png";
 import profile from "../../assets/profile_icon.png";
 
-import "./SearchBar.css";
+// import "./SearchBar.css";
 
 // TODO: Search - SearchBar.js
 //   Set up the search bar will like the comment input and the like button. In your function, filter out any post whose username doesn't match the search term passed in, then update the state with the resulting data.
@@ -48,6 +48,11 @@ const StyledSBarRightImg = styled.img`
   height: 40px;
 `;
 
+const StyledInput = styled.input`
+  border: none;
+  background-color: #f5f8fa;
+`;
+
 const SearchBar = () => {
   return (
     <StyledSearchBar>
@@ -57,7 +62,7 @@ const SearchBar = () => {
       </StyledSBarLeft>
       <StyledSBarWrapper>
         <i className="fas fa-search" />
-        <input type="text" placeholder="Search" className="sbar" />
+        <StyledInput type="text" placeholder="Search" className="sbar" />
       </StyledSBarWrapper>
       <StyledSBarRight>
         <StyledSBarRightImg src={compass} alt="compass" />
