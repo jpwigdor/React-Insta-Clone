@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import Comment from "./Comment";
 
 import heart from "../../assets/like_icon.png";
+import heartRed from "../../assets/RedHeart.png";
 import "./CommentsSection.css";
 
 class CommentsSection extends Component {
@@ -11,9 +12,18 @@ class CommentsSection extends Component {
     super(props);
     this.state = {
       comments: props.comments,
-      comment: ""
+      comment: "",
+      likes: props.post.likes,
+      liked: false
     };
   }
+
+  likedPost = () => {
+    this.setState(prevState => ({
+      liked: !prevState.liked,
+      likes: !prevState.liked ? prevState.likes + 1 : prevState.likes - 1
+    }));
+  };
 
   addComment = e => {
     this.setState(
@@ -38,7 +48,11 @@ class CommentsSection extends Component {
     return (
       <div className="container-comments-section">
         <div className="container-comments-icons">
-          <img src={heart} alt="like" />
+          <img
+            src={this.state.liked ? heartRed : heart}
+            alt="like"
+            onClick={this.likedPost}
+          />
           {/* Images here */}
           {/* Images here */}
         </div>
